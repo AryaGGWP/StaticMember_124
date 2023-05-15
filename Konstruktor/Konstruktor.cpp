@@ -27,21 +27,25 @@ mahasiswa::mahasiswa(string iNama) {
     nama = iNama;
 }
 
-
-
-
-int main()
-{
-    std::cout << "Hello World!\n";
+mahasiswa::mahasiswa(int iNim, string iNama) {
+    nim = iNim;
+    nama = iNama;
+}
+void mahasiswa::cetak() {
+    cout << endl << "Nim =" << nim << endl;
+    cout << " Nama = " << nama << endl;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+int main() {
+    mahasiswa mhs1;
+    mahasiswa mhs2(20);
+    mahasiswa mhs3("Indra");
+    mahasiswa mhs4(30, "Fauzan");
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+    mhs1.cetak();
+    mhs2.cetak();
+    mhs3.cetak();
+    mhs4.cetak();
+
+    return 0;
+}
