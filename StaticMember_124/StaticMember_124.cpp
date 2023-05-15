@@ -21,6 +21,7 @@ void mahasiswa::setID(){
 
 void mahasiswa::printAll() {
     mahasiswa mhs1("Lia Kurnia");
+    mahasiswa mhs2("Asroni");
     
 }
 
