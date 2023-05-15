@@ -1,24 +1,28 @@
 #include <iostream>
 #include <string>
-using namespace std:
+using namespace std;
 
-class mahasiswa {
+class mahasiswa{
 public:
-    static int nim:
+    static int nim;
     int id:
     string nama;
 
     void setID();
-    void printA11();
-    mahasiswa(string pnama) :nama(pnama) { setID(); }
+    void printAll();
+    mahasiswa(string pnama):nama(pnama){setID();}
 };
 
 int mahasiswa::nim = 0;
 
-void mahasiswa ::setID(){
+void mahasiswa::setID(){
     id = ++nim;
 }
 
+void mahasiswa::printAll() {
+    mahasiswa mhs1("Lia Kurnia");
+    
+}
 
 
 int main()
